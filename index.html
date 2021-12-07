@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   
+        
+
+<form name="Form" onsubmit="return validateForm()" >
+    <h2>Application Form</h2>
+    <div class="box">
+        <label>Full Name</label>
+        <input type="text" name="name" id="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="box">
+        <label>Email Address</label>
+        <input type="text" name="email" id="email">
+        <div class="error" id="emailErr"></div>
+    </div>
+    <div class="box">
+        <label>Mobile Number</label>
+        <input type="tel" name="mobile" maxlength="10" id="mobile" >
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <div class="box">
+        <label>Country</label>
+        <select name="country" id="country">
+            <option>Select</option>
+            <option>Nepal</option>
+            <option>India</option>
+            <option>China</option>
+            <option>Japan</option>
+            <option>korea</option>
+        </select> 
+        <div class="error" id="countryErr"></div>
+    </div>
+    <div class="box">
+        <label>Gender</label>
+        <div class="form-inline" id="gender">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label> 
+        </div>
+        <div class="error" id="genderErr"></div>
+    </div>
+</div>
+<div class="box">
+    <label >Hobbies</label>
+    <div class="_hobbies" id="hobbies">
+     <label><input type="checkbox" name="hobbies" value="Sports">Sports</label>
+     <label><input type="checkbox" name="hobbies" value="Music">Music</label>
+     <label><input type="checkbox" name="hobbies" value="movies">Movies</label>
+
+    </div>
+          
+    <div class="box">
+        <input type="submit" value="Submit">
+    
+    </div>
+</form>
+
+
+</body>
+</html>
